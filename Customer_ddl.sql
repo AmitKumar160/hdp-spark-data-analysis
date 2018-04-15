@@ -1,3 +1,5 @@
+
+create database organisation;
 use organisation;
 Drop table if exists Customer;
 create table Customer(

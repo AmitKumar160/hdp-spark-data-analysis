@@ -48,6 +48,13 @@ Build project:
 			
 		    mvn install
 
+Before running job please create DDL for below output tables according to select query in insight queries:
+1.avg_revenue_cty
+2.num_cus_cty
+3.num_sup_cty
+4.prod_disCont_cty
+5.order_prd_id
+
 
 Operation on Spark Environment:
 
