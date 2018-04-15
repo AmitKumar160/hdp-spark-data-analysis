@@ -51,7 +51,5 @@ Build project:
 
 Operation on Spark Environment:
 
-
-
-./bin/spark-submit --master spark://Hadoop04:7077 --class com.spark.data.analysis.SparkSqlJDBC /{directory}/sparksql-1.0-SNAPSHOT.jar
+./spark-client/bin/spark-submit --master yarn --deploy-mode cluster --class com.spark.data.analysis.SparkSqlJDBC --driver-memory 2G --num-executors 4 --executor-cores 2 --executor-memory 2G /{directory}/hdp-spark-data-analysis 0.0.1-SNAPSHOT user password hostName port db_instance
 
