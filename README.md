@@ -58,5 +58,5 @@ Before running job please create DDL for below output tables according to select
 
 Operation on Spark Environment:
 
-./spark-client/bin/spark-submit --master yarn --deploy-mode cluster --class com.spark.data.analysis.SparkSqlJDBC --driver-memory 2G --num-executors 4 --executor-cores 2 --executor-memory 2G /{directory}/hdp-spark-data-analysis 0.0.1-SNAPSHOT user password hostName port db_instance
+./spark-client/bin/spark-submit --master yarn --deploy-mode cluster --class com.spark.data.analysis.SparkSqlJDBC --driver-memory 2G --num-executors 4 --executor-cores 2 --executor-memory 2G /{directory}/hdp-spark-data-analysis 0.0.1-SNAPSHOT user password hostName port db_instance db_type(mysql/postgresql/mssqlserver)
 
